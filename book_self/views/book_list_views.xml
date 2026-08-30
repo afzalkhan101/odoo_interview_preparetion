@@ -1,0 +1,37 @@
+<odoo>
+
+    <record id="book_list_view" model="ir.ui.view">
+        <field name="name">book.list.list</field>
+        <field name="model">book.list</field>
+        <field name="arch" type="xml">
+            <list string="Book List">
+                <field name="name" width="100"/>
+                <field name="price" width="100"/>
+                <field name="description" width="100"/>
+            </list>
+        </field>
+    </record>
+
+
+    <record id="estate_property_form" model="ir.ui.view">
+        <field name="name">book.list.form</field>
+        <field name="model">book.list</field>
+        <field name="arch" type="xml">
+            <form string="Book">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="price"/>
+                    </group>
+
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+</odoo>
